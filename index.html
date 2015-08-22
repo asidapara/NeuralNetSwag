@@ -11,6 +11,13 @@
    <input name="number5" placeholder="x"/><input name="number52" placeholder="y"/>
    <input type="submit" value="Submit">
 </form>
-</form>
+<script>
+var net = brain.NeuralNetwork();
+net.train([{input: [1, 2], output: [2]},
+           {input: [1, 2], output: [2]},
+           {input: [1, 2], output: [2]}]);
+var output = net.run([1, 2]);
+console.log(output);
+</script>
 </body>
 </html>
